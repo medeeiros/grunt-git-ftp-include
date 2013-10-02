@@ -1,0 +1,21 @@
+{
+  "name": "grunt-git-ftp-include",
+  "version": "1.0.0",
+  "description": "used to generate the .git-ftp-include (git-ftp by resmo) used for upload non-tracking files to the server",
+  "main": "tasks/includeFTP.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GuilhermeMedeiros/grunt-git-ftp-include"
+  },
+  "keywords": [
+    "git-ftp"
+  ],
+  "author": {
+    "name": "Guilherme Medeiros"
+  },
+  "license": "MIT",
+  "readme": "grunt-git-ftp-include\n=====================\n\nused to generate the .git-ftp-include used for git-ftp by resmo\n\n\n## Install\nLoad the task on your Grunt file:\n```\ngrunt.loadNpmTasks('grunt-git-ftp-include');\n```\n\n## Configure the task:\n\n```\nincludeFTP: {\n\tall: {\n\t\tfiles: [\n\t\t\t{dest: 'public/_dist/css/main-built.css', src: 'public/css/*.css'},\n\t\t\t{dest: 'public/_dist/js/main-built.js', src: 'public/js/**/*.js'},\n\t\t\t{src: ['**/*'], dest: 'public/_dist/img', expand: true, cwd: 'public/img'}\n\t\t]\n\t}\n}\n```\n\n## Run\nRun `$ grunt includeFTP` and a file `.git-ftp-include` will be generated",
+  "readmeFilename": "README.md",
+  "_id": "grunt-git-ftp-include@1.0.0",
+  "_from": "grunt-git-ftp-include@"
+}
